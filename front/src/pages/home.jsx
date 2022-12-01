@@ -1,12 +1,12 @@
 import React, {Fragment} from "react";
 import Header from "../components/Header";
-import Jouer from "../components/Jouer";
+import HomeInput from "../components/homeInput";
 
 function Home () {
   return (
     <Fragment>
-      <Header />
-        <Jouer />
+        <Header />
+        <HomeInput />
     </Fragment>
   );
 }

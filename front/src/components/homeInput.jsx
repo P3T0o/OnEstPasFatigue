@@ -63,6 +63,7 @@ class HomeInput extends React.Component {
                     />
                     <label htmlFor="pseudoP2"></label>
                 </div>
+                
                 <Jouer />
             </form>
         )
