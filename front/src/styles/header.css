@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #FF3232;
+}
+
+.header h1 {
+    /*font-size: 40px;*/
+
+}
