@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Question;
+use App\Models\informatio;
 
 class questionController extends Controller
 {
@@ -13,8 +14,9 @@ class questionController extends Controller
     public function show(Question $question){
 
         $questionReponses = DB::table('questions')
+                        ->where("questions.id", "$question->id")
                         ->join('reponses', 'questions.id', '=', 'reponses.question_id')
-                        ->select('reponse', 'question', 'question_id', 'reponses.id')
+                        ->join('informations', 'questions.id', '=', 'informations.question_id')
                         ->get();
 
         return response()->json($questionReponses);
