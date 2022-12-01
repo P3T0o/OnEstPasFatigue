@@ -1,14 +1,12 @@
 import React, {Fragment} from "react";
 import Header from "../components/header/Header";
-import Jouer from "../components/main/Jouer";
 
-function Home () {
+function Jeu () {
   return (
     <Fragment>
       <Header />
-        <Jouer />
     </Fragment>
   );
 }
 
-export default Home;
+export default Jeu;
