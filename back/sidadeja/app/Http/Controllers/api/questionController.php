@@ -17,6 +17,7 @@ class questionController extends Controller
                         ->where("questions.id", "$question->id")
                         ->join('reponses', 'questions.id', '=', 'reponses.question_id')
                         ->join('informations', 'questions.id', '=', 'informations.question_id')
+                        ->select('reponses.id', 'reponse', 'question', 'info', 'reponses.question_id', 'reponse_bonne')
                         ->get();
 
         return response()->json($questionReponses);
