@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Question;
-use App\Models\informatio;
+use App\Models\information;
 
 class questionController extends Controller
 {
