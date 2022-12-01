@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('information', function (Blueprint $table) {
             $table->id();
-            $table->string("info");
+            $table->text("info");
             
             $table->foreignId('question_id')->nullable()->constrained();
         });
