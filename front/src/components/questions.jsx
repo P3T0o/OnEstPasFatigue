@@ -1,7 +1,7 @@
 import React from "react";
+import QuestionNbr from "./questionNbr.jsx";
 import {getById} from "../api/get";
 
-// import DB from mysql
 function Questions() {
     const [data, setData] = React.useState([]);
     const [id, setId] = React.useState(1);
@@ -13,6 +13,9 @@ function Questions() {
     console.log(data);
     return (
         <div className={"questions"}>
+            <div id={"nbrQuestion"}>
+                <QuestionNbr />
+            </div>
             <h3>Question</h3>
 
             <div className={"reponses"}>
