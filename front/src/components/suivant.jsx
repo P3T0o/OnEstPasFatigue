@@ -3,8 +3,7 @@ import React from "react";
 function Suivant() {
     return (
         <div>
-            <button
-                id="jouer"
+            <button className={"suivant"}
                 onClick={() => {
                     window.location.href = "/jeu";
                 }}
