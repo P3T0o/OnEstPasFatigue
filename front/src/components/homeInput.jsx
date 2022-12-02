@@ -15,7 +15,7 @@ class HomeInput extends React.Component {
             input8: "",
             input9: "",
             input10: "",
-            newPlayerArray: [],
+            newPlayerArray: [3,4],
         };
     }
 
@@ -63,25 +63,25 @@ class HomeInput extends React.Component {
                     />
                     <label htmlFor="pseudoP2"></label>
                 </div>
+                { this._state.newPlayerArray.map ( items => {
+                    return (
+                        <div className={"form__input"}>
+                            <input
+                                type="text"
+                                placeholder={`Pseudo P${items}`}
+                                value={this._state[`input${items}`]}
+                                onChange={this.setInput2}
+                            />
+                            <label htmlFor="pseudoP2"></label>
+                        </div>
+                    )
+                })
 
+                }
                 <Jouer />
             </form>
         )
     }
-}
-
-const newPlayerInput = ({newPlayerArray}) => {
-    return (
-        <div className={"form__input"}>
-            <input
-                type="text"
-                placeholder="Pseudo P2"
-                value={this._state.input}
-                onChange={this.setInput2}
-            />
-            <label htmlFor="pseudoP2"></label>
-        </div>
-    )
 }
 
 export default HomeInput;
