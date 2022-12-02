@@ -20,7 +20,7 @@ function QuestionNbr() {
 
     return (
         <div className={"questionNbr"}>
-            {data[0].question_id + "/" + questionsNbr}
+            {data[0]?.question_id + "/" + questionsNbr}
         </div>
     );
 }
