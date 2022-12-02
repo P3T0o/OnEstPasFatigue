@@ -1,10 +1,18 @@
 import React from "react";
-import Suivant from "./suivant";
+import {getById} from "../api/get";
 
 // import DB from mysql
 function Questions() {
+    const [data, setData] = React.useState([]);
+    const [id, setId] = React.useState(1);
+    React.useEffect(() => {
+        getById(id).then((data) => {
+            setData(data);
+        });
+    }, []);
+    console.log(data);
     return (
-        <div className={"questions"} id={"questions"}>
+        <div className={"questions"}>
             <h3>Question</h3>
 
             <div className={"reponses"}>

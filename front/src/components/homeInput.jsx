@@ -15,7 +15,7 @@ class HomeInput extends React.Component {
             input8: "",
             input9: "",
             input10: "",
-            newPlayerArray: [3,4],
+            newPlayerArray: [],
         };
     }
 
@@ -76,12 +76,9 @@ class HomeInput extends React.Component {
         );
         console.log(array);
         localStorage.setItem("players", JSON.stringify(array));
-        console.log("submit");
     }
 
     render () {
-        console.log(this.state.input);
-        console.log(this.state.input2);
         return (
             <form
                 onSubmit={this.handleSubmit}
@@ -114,7 +111,6 @@ class HomeInput extends React.Component {
                         </div>
                     )
                 })
-
                 }
                 <Jouer />
             </form>
