@@ -38,6 +38,7 @@ class HomeInput extends React.Component {
         console.log("submit");
     }
 
+
     render () {
         console.log(this._state.input);
         console.log(this._state.input2);
