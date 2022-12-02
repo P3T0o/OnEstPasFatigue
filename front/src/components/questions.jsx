@@ -1,6 +1,7 @@
 import React from "react";
 import Suivant from "./suivant";
 
+// import DB from mysql
 function Questions() {
     return (
         <div className={"questions"} id={"questions"}>
@@ -13,6 +14,9 @@ function Questions() {
                         const body = document.getElementById('questions');
                         body.innerHTML = "Joueur distribue !" +
                             "<br>" + "informations";
+                        setTimeout(() => {
+                            window.location.href = "/jeu";
+                        }, 2000);
                     }}
                 >
                     rep 1
@@ -23,15 +27,16 @@ function Questions() {
                     onClick={() => {
                         const body = document.getElementById('questions');
                         body.innerHTML = "Joueur boit !" +
-                            "<br>" + "informations" + "<br>" + "<Suivant/>";
+                            "<br>" + "informations";
+                        setTimeout(() => {
+                            window.location.href = "/jeu";
+                        }, 2000);
                     }}
                 >
                     rep 2
                 </button>
             </div>
         </div>
-
-
     );
 }
 

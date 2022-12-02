@@ -4,7 +4,7 @@ import Jouer from "./jouer.jsx";
 class HomeInput extends React.Component {
     constructor (props) {
         super(props);
-        this._state = {
+        this.state = {
             input: "",
             input2: "",
             input3: "",
@@ -63,17 +63,25 @@ class HomeInput extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         let array = [];
-        array.push(this._state.input);
-        array.push(this._state.input2);
+        array.push(this.state.input,
+            this.state.input2,
+            this.state.input3,
+            this.state.input4,
+            this.state.input5,
+            this.state.input6,
+            this.state.input7,
+            this.state.input8,
+            this.state.input9,
+            this.state.input10
+        );
         console.log(array);
         localStorage.setItem("players", JSON.stringify(array));
         console.log("submit");
     }
 
-
     render () {
-        console.log(this._state.input);
-        console.log(this._state.input2);
+        console.log(this.state.input);
+        console.log(this.state.input2);
         return (
             <form
                 onSubmit={this.handleSubmit}
@@ -82,7 +90,6 @@ class HomeInput extends React.Component {
                     <input
                         type="text"
                         placeholder="Pseudo P1"
-                        defaultValue=""
                         onChange={this.setInput}
                     />
                     <label htmlFor="pseudoP1"></label>
@@ -91,19 +98,17 @@ class HomeInput extends React.Component {
                     <input
                         type="text"
                         placeholder="Pseudo P2"
-                        defaultValue=""
                         onChange={this.setInput2}
                     />
                     <label htmlFor="pseudoP2"></label>
                 </div>
-                { this._state.newPlayerArray.map ( items => {
+                { this.state.newPlayerArray.map (items => {
                     return (
                         <div className={"form__input"}>
                             <input
                                 type="text"
                                 placeholder={`Pseudo P${items}`}
-                                value={this._state[`input${items}`]}
-                                onChange={this.setInput2}
+                                onChange={this[`setInput${items}`]}
                             />
                             <label htmlFor="pseudoP2"></label>
                         </div>

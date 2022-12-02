@@ -2,6 +2,7 @@ import React from "react";
 
 function Jouer() {
     return (
+        // check if inputs of ./homeInput.jsx are not empty
         <div>
             <button
                 id="jouer"
