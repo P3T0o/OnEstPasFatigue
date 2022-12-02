@@ -82,7 +82,7 @@ class HomeInput extends React.Component {
                     <input
                         type="text"
                         placeholder="Pseudo P1"
-                        value={this._state.input}
+                        defaultValue=""
                         onChange={this.setInput}
                     />
                     <label htmlFor="pseudoP1"></label>
@@ -91,7 +91,7 @@ class HomeInput extends React.Component {
                     <input
                         type="text"
                         placeholder="Pseudo P2"
-                        value={this._state.input2}
+                        defaultValue=""
                         onChange={this.setInput2}
                     />
                     <label htmlFor="pseudoP2"></label>
