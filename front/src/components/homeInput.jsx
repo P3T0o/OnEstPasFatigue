@@ -27,6 +27,38 @@ class HomeInput extends React.Component {
         this.setState({input2: event.target.value});
     }
 
+    setInput3 = (event) => {
+        this.setState({input3: event.target.value});
+    }
+
+    setInput4 = (event) => {
+        this.setState({input4: event.target.value});
+    }
+
+    setInput5 = (event) => {
+        this.setState({input5: event.target.value});
+    }
+
+    setInput6 = (event) => {
+        this.setState({input6: event.target.value});
+    }
+
+    setInput7 = (event) => {
+        this.setState({input7: event.target.value});
+    }
+
+    setInput8 = (event) => {
+        this.setState({input8: event.target.value});
+    }
+
+    setInput9 = (event) => {
+        this.setState({input9: event.target.value});
+    }
+
+    setInput10 = (event) => {
+        this.setState({input10: event.target.value});
+    }
+
 
     handleSubmit = (event) => {
         event.preventDefault();
