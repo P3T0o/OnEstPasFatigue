@@ -1,0 +1,32 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    margin: 100px auto;
+    font-size: 30px;
+}
+
+.question h3 {
+    font-size: 20px;
+}
+
+.questions button {
+    position: relative;
+    font-size: 20px;
+    top: 50px;
+    border-radius: 15px;
+    border: 3px solid #000;
+    background-color: #FF3232;
+    margin: 1%;
+    width: 15vh;
+    min-height: 6vh;
+    padding: 7px;
+}
+
+.reponses {
+    display: flex;
+    flex-direction: row;
+}

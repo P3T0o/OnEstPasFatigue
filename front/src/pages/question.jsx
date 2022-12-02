@@ -1,14 +1,14 @@
 import React, {Fragment} from "react";
 import Header from "../components/header";
-import HomeInput from "../components/homeInput";
+import Questions from "../components/questions";
 
-function Home () {
+function Question () {
   return (
     <Fragment>
         <Header />
-        <HomeInput />
+        <Questions />
     </Fragment>
   );
 }
 
-export default Home;
+export default Question;

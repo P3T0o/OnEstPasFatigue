@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import './styles/main.css';
 import Home from './pages/home';
-import Jeu from './pages/jeu';
+import Question from './pages/question';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +12,7 @@ root.render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/jeu" element={<Jeu />} />
+            <Route path="/jeu" element={<Question />} />
         </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,5 +1,5 @@
 import React from "react";
-import Jouer from "./Jouer.jsx";
+import Jouer from "./jouer.jsx";
 
 class HomeInput extends React.Component {
     constructor (props) {
@@ -14,7 +14,8 @@ class HomeInput extends React.Component {
             input7: "",
             input8: "",
             input9: "",
-            input10: ""
+            input10: "",
+            newPlayerArray: [],
         };
     }
 
@@ -35,8 +36,6 @@ class HomeInput extends React.Component {
         localStorage.setItem("players", JSON.stringify(array));
         console.log("submit");
     }
-
-
 
     render () {
         console.log(this._state.input);
@@ -63,11 +62,25 @@ class HomeInput extends React.Component {
                     />
                     <label htmlFor="pseudoP2"></label>
                 </div>
-                
+
                 <Jouer />
             </form>
         )
     }
+}
+
+const newPlayerInput = ({newPlayerArray}) => {
+    return (
+        <div className={"form__input"}>
+            <input
+                type="text"
+                placeholder="Pseudo P2"
+                value={this._state.input}
+                onChange={this.setInput2}
+            />
+            <label htmlFor="pseudoP2"></label>
+        </div>
+    )
 }
 
 export default HomeInput;
