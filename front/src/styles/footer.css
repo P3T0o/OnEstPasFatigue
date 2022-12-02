@@ -12,7 +12,8 @@
 
 .footer>h4 {
     text-decoration:underline;
-    margin: 2%;
+    margin: 5% 0 0 0;
+    font-size: 18px;
 }
 
 .box {
@@ -34,7 +35,7 @@
 
 .footer_li {
     list-style: none;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .footer_right {
