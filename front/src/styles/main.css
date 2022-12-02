@@ -2,6 +2,7 @@
 @import url("header.css");
 @import url("jouer.css");
 @import url("homeInput.css");
+@import url("questions.css");
 
 body {
     margin: 0;
