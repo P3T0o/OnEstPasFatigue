@@ -27,6 +27,7 @@ class HomeInput extends React.Component {
         this.setState({input2: event.target.value});
     }
 
+
     handleSubmit = (event) => {
         event.preventDefault();
         let array = [];
