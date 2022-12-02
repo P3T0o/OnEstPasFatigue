@@ -22,3 +22,4 @@ use App\Http\Controllers\API\questionController;
 */
 
 Route::get("question/{question}", [questionController::class, 'show']);
+Route::get("questionsNbr", [questionController::class, 'nbrQuestions']);

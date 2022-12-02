@@ -23,4 +23,12 @@ class questionController extends Controller
         return response()->json($questionReponses);
     }
 
+    // Route qui retourne le nbr de questions
+    public function nbrQuestions(){
+
+        $nbrQuestions = Question::all();
+
+        return response()->json(count($nbrQuestions));
+    }
+
 }
