@@ -1,0 +1,31 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.img404{
+    background: url(/css/img_404/404error.png) center/100vw;
+    bottom: 20%;
+    background-repeat: no-repeat;
+    height:  60vh;
+    width: 100vw;
+    position: absolute ;
+}
+
+.imgLoop{
+    background: url(/css/img_404/storm.png) center/120px;
+    background-repeat: repeat-x;
+    height:  20vh;
+}
+
+.imgLogo{
+    background: url(/css/img_404/logo.png) center/120px;
+    background-repeat: repeat-x;
+    height:  20vh;
+}
+
+.imgtider{
+    background: url(/css/img_404/tinderSurprise.png) center/120px;
+    background-repeat: repeat-x;
+    height:  20vh;
+}
