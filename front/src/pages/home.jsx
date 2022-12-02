@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import Header from "../components/Header";
+import Header from "../components/header";
 import HomeInput from "../components/homeInput";
 
 function Home () {

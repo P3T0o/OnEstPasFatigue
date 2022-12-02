@@ -1,4 +1,5 @@
 import React from "react";
+import Suivant from "./suivant";
 
 function Questions() {
     return (
@@ -22,7 +23,7 @@ function Questions() {
                     onClick={() => {
                         const body = document.getElementById('questions');
                         body.innerHTML = "Joueur boit !" +
-                            "<br>" + "informations";
+                            "<br>" + "informations" + "<br>" + "<Suivant/>";
                     }}
                 >
                     rep 2

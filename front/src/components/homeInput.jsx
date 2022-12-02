@@ -1,5 +1,5 @@
 import React from "react";
-import Jouer from "./Jouer.jsx";
+import Jouer from "./jouer.jsx";
 
 class HomeInput extends React.Component {
     constructor (props) {
